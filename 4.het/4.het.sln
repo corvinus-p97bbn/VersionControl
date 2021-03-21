@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.het", "4.het\4.het.csproj", "{E86F50F1-7E13-4A5D-9E30-9CADF5A5F062}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HajósTest", "4.het\HajósTest.csproj", "{E86F50F1-7E13-4A5D-9E30-9CADF5A5F062}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
