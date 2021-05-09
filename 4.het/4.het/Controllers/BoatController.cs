@@ -16,7 +16,7 @@ namespace _4.het.Controllers
         [Route("questions/all")]
         public ActionResult M1()
         {
-            HajostesztContext context = new HajostesztContext();
+            Models.HajostesztContext context = new Models.HajostesztContext();
             var kérdések = from x in context.Questions select x.QuestionText;
 
             return new JsonResult(kérdések);
