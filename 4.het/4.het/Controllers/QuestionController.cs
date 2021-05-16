@@ -14,7 +14,7 @@ namespace _4.het.Controllers
         }
         public int M1()
         { HajostesztContext context = new HajostesztContext();
-            int kérdésekSzáma = context.Questions.Count();
+            int kérdésekSzáma = 12;
             return kérdésekSzáma;
         }
         [ HttpGet]
@@ -22,12 +22,12 @@ namespace _4.het.Controllers
         public ActionResult M2( int sorszám)
         {
             HajostesztContext context = new HajostesztContext();
-            var kérdés = (from x in context.Questions
-                          where x.QuestionId == sorszám
-                          select x).FirstOrDefault();
+            var kérdés = 10;//(from x in context.Questions
+                      // where x.QuestionId == sorszám
+                         // select x).FirstOrDefault();
 
 
-            if (kérdés==null) return BadRequest("Nincs ilyen kérdés!")
+            if (kérdés == null) return BadRequest("Nincs ilyen kérdés!");
             {
                 return new JsonResult(kérdés);
             }
